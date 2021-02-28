@@ -275,10 +275,10 @@ def dmmDisplayText(data, mRange):
         logging.info("Range: %d %s %s %s  Timebase: %d %s %s Measurement: %s  Readout: %s", mRange[0], mRange[1], mRange[2], mrauto, \
             timebase[data[13]][0], timebase[data[13]][1], tbauto, measurement, printout)
     else:
-        print "Range:", mRange[0], mRange[1], mRange[2], mrauto
-        print "Time base:",timebase[data[13]][0],timebase[data[13]][1], tbauto
-        print "Measurement:", measurement
-        print "Actual readout:", printout
+        print("Range:", mRange[0], mRange[1], mRange[2], mrauto)
+        print("Time base:",timebase[data[13]][0],timebase[data[13]][1], tbauto)
+        print("Measurement:", measurement)
+        print("Actual readout:", printout)
 
 def dmmProcessData(data, mRange):
     # Display graph if we received data with plot
