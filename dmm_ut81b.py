@@ -167,6 +167,9 @@ def getAnswer(ep): #return list of read bytes; stop reading when timeout or when
 def dmmInit():
     d = usb.core.find(idVendor=0x1a86, idProduct=0xe008)
 
+    if d is None:
+        d = usb.core.find(idVendor=0x04fa, idProduct=0x2490)
+
     logging.debug("Found device: %s ", d)
 
     # Did we found a device?
